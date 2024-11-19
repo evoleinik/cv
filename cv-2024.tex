@@ -9,20 +9,21 @@
 \usepackage{setspace}
 \usepackage[explicit]{titlesec}
 \usepackage{multicol}
-\usepackage{fontawesome5} % Use fontawesome5 instead
+\usepackage{fontawesome5}
+\usepackage{graphicx} % For including images
 
 % Modern font selection
 \setmainfont{Helvetica Neue}[
     UprightFont = *-Light,
     BoldFont = *-Bold,
 ]
-\setsansfont{Arial} % Different font for headings
+\setsansfont{Arial}
 
 % Custom colors
-\definecolor{primarycolor}{RGB}{0, 79, 159}    % Professional blue
-\definecolor{secondarycolor}{RGB}{100, 100, 100} % Subtle gray
-\definecolor{linkcolor}{RGB}{0, 112, 201}      % Link blue
-\definecolor{headerbg}{RGB}{240, 240, 240}     % Light gray background
+\definecolor{primarycolor}{RGB}{0, 79, 159}
+\definecolor{secondarycolor}{RGB}{100, 100, 100}
+\definecolor{linkcolor}{RGB}{0, 112, 201}
+\definecolor{headerbg}{RGB}{240, 240, 240}
 
 % Custom section styling
 \titleformat{\section}
@@ -58,17 +59,21 @@
 \begin{center}
     \colorbox{headerbg}{\parbox{\textwidth}{
         \vspace{0.5em}
-        {\Huge\textbf{Eugene Oleinik}} \\[0.3em]
-        {\Large\color{secondarycolor} Chief Technical Officer | Tech Growth Leader} \\[0.5em]
-        {\color{secondarycolor}
-        \faMapMarker \, Bangkok, Thailand | Moscow, Russia (hometown) \\[0.2em]
-        \faEnvelope \, \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | \faPhone \, +66 80997 2366 \\[0.2em]
-        \faLinkedin \, \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}}
+        \hspace{0.25em}
+        \begin{minipage}[c]{0.2\textwidth}
+            \includegraphics[width=\linewidth]{headshot.jpg} % Adjust the filename and path
+        \end{minipage}\hspace{0.5em}\hfill
+        \begin{minipage}[c]{0.75\textwidth}
+            {\Huge\textbf{Eugene Oleinik}} \\[0.3em]
+            {\Large\color{secondarycolor} Chief Technical Officer | Tech Growth Leader} \\[0.5em]
+            {\color{secondarycolor}
+            \faMapMarker \, Bangkok, Thailand | Moscow, Russia (hometown) \\[0.2em]
+            \faEnvelope \, \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | \faPhone \, +66 80997 2366 \\[0.2em]
+            \faLinkedin \, \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}}
+        \end{minipage}
         \vspace{0.5em}
     }}
 \end{center}
-
-% \vspace{0.5em}
 
 % Professional Summary
 \section*{Professional Summary}
@@ -129,7 +134,6 @@ Experienced technology leader with a proven track record in leading global engin
 
 % Skills
 \section*{Skills \& Expertise}
-% \begin{multicols}{2}
 \begin{itemize}
     \item \textbf{Leadership}: Managing global remote teams, fostering collaboration, and driving accountability.
     \item \textbf{Operational Metrics}: Establishing KPIs to optimize engineering velocity and quality.
@@ -139,14 +143,11 @@ Experienced technology leader with a proven track record in leading global engin
     \item \textbf{Product Development}: Proficient in prioritization frameworks (\textbf{Jira Product Discovery, ICE}) and experimentation frameworks (\textbf{A/B testing}).
     \item \textbf{M\&A Leadership}: Taking part in due diligence and ensuring seamless integration during acquisitions.
 \end{itemize}
-% \end{multicols}
 
 % Education
 \section*{Education}
 \textbf{Specialist degree in Applied Mathematics} \\
 Moscow Aviation Institute (National Research University) \hfill 2005--2010
-
-
 
 % Additional Information
 \section*{Additional Information}

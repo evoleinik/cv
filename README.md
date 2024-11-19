@@ -4,8 +4,12 @@ This repository contains the LaTeX source code and Makefile for the professional
 
 ## Example Output
 
-<img src="cv-2024-1.png" width="500"/>
-<img src="cv-2024-2.png" width="500"/>
+<p align="center">
+  <img src="cv-2024-1.png" width="500" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0"/>
+</p>
+<p align="center">
+  <img src="cv-2024-2.png" width="500" style="border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 10px 0"/>
+</p>
 
 ## Technology Stack
 

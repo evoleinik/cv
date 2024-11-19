@@ -30,6 +30,23 @@ This repository contains the LaTeX source code and Makefile for the professional
 - LaTeX distribution (e.g., TeX Live, MikTeX, or Overleaf)
 - GNU Make (optional, for building with the Makefile)
 
+### Installing MacTeX (for macOS users)
+
+1. Install MacTeX using Homebrew:
+   ```bash
+   brew install --cask mactex
+   ```
+   
+   Or download the installer from the MacTeX website:
+   1. Visit https://www.tug.org/mactex/
+   2. Download MacTeX.pkg
+   3. Run the installer
+   
+2. Verify installation:
+   ```bash
+   xelatex --version
+   ```
+
 ### Building the Resume
 
 1. Clone this repository:

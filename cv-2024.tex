@@ -1,47 +1,76 @@
 \documentclass[11pt,a4paper]{article}
 
-% Packages for customization
-\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+% Enhanced packages for better typography and layout
+\usepackage[left=0.75in, right=0.75in, top=0.75in, bottom=0.75in]{geometry}
 \usepackage{hyperref}
-\usepackage{enumitem} % For custom list spacing
-\usepackage{titlesec} % For custom section formatting
-\usepackage{multicol} % For multi-column layouts
-\usepackage{xcolor} % For colored links
+\usepackage{enumitem}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage[explicit]{titlesec}
+\usepackage{multicol}
 
-% Custom Section Styling
-\titleformat{\section}{\Large\bfseries}{}{0em}{\vspace{-0.5em}}
-\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[\vspace{0.5em}]
-\setlist{noitemsep, topsep=0pt}
+% Modern font selection
+\setmainfont{Helvetica Neue}[
+    UprightFont = *-Light,
+    BoldFont = *-Bold,
+]
+
+% Custom colors
+\definecolor{primarycolor}{RGB}{0, 79, 159}    % Professional blue
+\definecolor{secondarycolor}{RGB}{100, 100, 100} % Subtle gray
+\definecolor{linkcolor}{RGB}{0, 112, 201}      % Link blue
+
+% Custom section styling
+\titleformat{\section}
+    {\Large\bfseries\color{primarycolor}}
+    {}{0em}
+    {#1\hrule height 0.5pt \vspace{-1em}}
+
+\titleformat{\subsection}
+    {\bfseries\color{secondarycolor}}
+    {}{0em}{#1\vspace{-0.5em}}
+
+% List styling
+\setlist[itemize]{
+    leftmargin=*,
+    topsep=0.2em,
+    itemsep=0.2em,
+    parsep=0pt
+}
 
 % Hyperlink setup
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    pdftitle={Eugene Oleinik CV},
+    pdfauthor={Eugene Oleinik}
 }
 
 \begin{document}
 
 % Header
 \begin{center}
-    {\Huge Eugene Oleinik} \\
-    \vspace{0.5em}
-    \textbf{Chief Technical Officer | Tech Growth Leader} \\
-    \vspace{0.5em}
-    Bangkok, Thailand | Moscow, Russia (hometown) \\
-    \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | +66 80997 2366 \\
-    \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}
+    {\Huge\textbf{Eugene Oleinik}} \\[0.3em]
+    {\Large\color{secondarycolor} Chief Technical Officer | Tech Growth Leader} \\[0.5em]
+    {\color{secondarycolor}
+    Bangkok, Thailand | Moscow, Russia (hometown) \\[0.2em]
+    \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | +66 80997 2366 \\[0.2em]
+    \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}}
 \end{center}
+
+\vspace{1em}
 
 % Professional Summary
 \section*{Professional Summary}
-\hrule
-Strategic and results-driven technology leader with a proven track record in leading global engineering teams, building scalable platforms, and driving operational excellence. Co-founder of two successful businesses, including APAC’s leading ground transportation OTA, handling 30,000 bookings daily. Passionate about growth hacking, developing innovative products, and fostering high-performing teams.
+{\setstretch{1.2}
+Strategic and results-driven technology leader with a proven track record in leading global engineering teams, building scalable platforms, and driving operational excellence. Co-founder of two successful businesses, including APAC's leading ground transportation OTA, handling 30,000 bookings daily. Passionate about growth hacking, developing innovative products, and fostering high-performing teams.}
 
 % Professional Experience
 \section*{Professional Experience}
 
-\subsection*{Chief Technical Officer}
+\subsection*{Co-Founder \& Chief Technical Officer}
 \textbf{12Go.com | Ground Transportation OTA (Online Travel)} \hfill 2014--2024
 \begin{itemize}
     \item Co-founded and scaled a platform handling \textbf{30,000 tickets sold daily}, \textbf{100+ searches per second}, with \textbf{search latency under 150 ms}, \textbf{99.95\% uptime}, and \textbf{global coverage}.
@@ -82,6 +111,7 @@ Strategic and results-driven technology leader with a proven track record in lea
 
 % Skills
 \section*{Skills \& Expertise}
+\begin{multicols}{2}
 \begin{itemize}
     \item \textbf{Leadership}: Managing global remote teams, fostering collaboration, and driving accountability.
     \item \textbf{Operational Metrics}: Establishing KPIs to optimize engineering velocity and quality.
@@ -91,6 +121,7 @@ Strategic and results-driven technology leader with a proven track record in lea
     \item \textbf{Product Development}: Proficient in prioritization frameworks (\textbf{Jira Product Discovery, ICE}) and experimentation frameworks (\textbf{A/B testing}).
     \item \textbf{M\&A Leadership}: Taking part in due diligence and ensuring seamless integration during acquisitions.
 \end{itemize}
+\end{multicols}
 
 % Education
 \section*{Education}

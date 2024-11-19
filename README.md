@@ -4,8 +4,8 @@ This repository contains the LaTeX source code and Makefile for the professional
 
 ## Example Output
 
-![CV Page 1](cv-2024-1.png)
-![CV Page 2](cv-2024-2.png)
+<img src="cv-2024-1.png" width="500"/>
+<img src="cv-2024-2.png" width="500"/>
 
 ## Technology Stack
 

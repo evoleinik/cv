@@ -2,6 +2,11 @@
 
 This repository contains the LaTeX source code and Makefile for the professional resume of Eugene Oleinik, highlighting achievements and experiences in technology leadership, engineering, and business growth.
 
+## Example Output
+
+![CV Page 1](cv-2024-1.png)
+![CV Page 2](cv-2024-2.png)
+
 ## Technology Stack
 
 - **LaTeX**: Core document preparation system

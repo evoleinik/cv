@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages for customization
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem} % For custom list spacing
+\usepackage{titlesec} % For custom section formatting
+\usepackage{multicol} % For multi-column layouts
+\usepackage{xcolor} % For colored links
+
+% Custom Section Styling
+\titleformat{\section}{\Large\bfseries}{}{0em}{\vspace{-0.5em}}
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[\vspace{0.5em}]
+\setlist{noitemsep, topsep=0pt}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge Eugene Oleinik} \\
+    \vspace{0.5em}
+    \textbf{Chief Technical Officer | Tech Growth Leader} \\
+    \vspace{0.5em}
+    Bangkok, Thailand | Moscow, Russia (hometown) \\
+    \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | +66 80997 2366 \\
+    \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+\hrule
+Strategic and results-driven technology leader with a proven track record in leading global engineering teams, building scalable platforms, and driving operational excellence. Co-founder of two successful businesses, including APAC’s leading ground transportation OTA, handling 30,000 bookings daily. Passionate about growth hacking, developing innovative products, and fostering high-performing teams.
+
+% Professional Experience
+\section*{Professional Experience}
+
+\subsection*{Chief Technical Officer}
+\textbf{12Go.com | Ground Transportation OTA (Online Travel)} \hfill 2014--2024
+\begin{itemize}
+    \item Co-founded and scaled a platform handling \textbf{30,000 tickets sold daily}, \textbf{100+ searches per second}, with \textbf{search latency under 150 ms}, \textbf{99.95\% uptime}, and \textbf{global coverage}.
+    \item Unified a multicultural team spanning \textbf{Eastern Europe, Southeast Asia, Middle East}, managing \textbf{45 remote team members} across \textbf{12 departments}.
+    \item Transitioned the company from a startup environment to corporate governance, integrating quarterly milestone planning and QBR reporting.
+\end{itemize}
+
+\subsubsection*{Leadership and Team Building}
+\begin{itemize}
+    \item Cultivated an \textbf{end-to-end ownership culture}, empowering teams to solve problems autonomously.
+    \item Nurtured a \textbf{collaborative environment}, fostering respectful and productive discussions.
+    \item Established KPIs for engineering teams, driving a \textbf{performance-driven culture}.
+    \item Implemented \textbf{agile workflows}, delivering fortnightly and on-demand releases via CI/CD pipelines.
+    \item Introduced \textbf{data-driven decision-making} using Jira Product Discovery (ICE prioritization) and A/B testing frameworks.
+\end{itemize}
+
+\subsubsection*{System Architecture and Development}
+\begin{itemize}
+    \item \textbf{Backend}: Led teams to build a scalable \textbf{search API} with latency under 150 ms, sharded caches, and a flexible pricing engine. Oversaw integration of \textbf{150+ supplier systems}.
+    \item \textbf{Frontend}: Guided development of a modern web app using \textbf{Node.js, Vue.js, Nuxt} and a mobile app contributing \textbf{30\% of bookings} within its first year.
+    \item \textbf{Infrastructure/DevOps}: Managed AWS infrastructure (\textbf{EC2, ELB, RDS, S3, CloudFront}) with tools like \textbf{Grafana}, \textbf{Datadog}, \textbf{Bugsnag}, and \textbf{Clickhouse}.
+\end{itemize}
+
+\subsubsection*{Strategic Contributions}
+\begin{itemize}
+    \item Partnered closely with the product team to deliver features on time and with high-quality code.
+    \item Planned annual budgets for infrastructure, third-party tools, and hiring, aligning resources with business growth objectives.
+    \item Navigated the COVID-19 crisis, leading due diligence for a successful M\&A with an Israeli group, integrating operations across \textbf{Israel, Croatia, Argentina, and Brazil}.
+\end{itemize}
+
+\subsection*{Co-Founder \& Chief Technical Officer}
+\textbf{GV | Holiday Rentals Platform (Online Travel/PropTech)} \hfill 2011--2012
+\begin{itemize}
+    \item Co-founded one of Southeast Asia’s first holiday rental platforms, partnering with Airbnb during their Thailand expansion.
+    \item Engineered scalable backend systems using \textbf{PHP}, \textbf{MySQL}, and \textbf{Go}, supporting \textbf{thousands of property listings}.
+    \item Expanded the business beyond Russian-speaking clients, achieving significant growth in Southeast Asia.
+\end{itemize}
+
+% Skills
+\section*{Skills \& Expertise}
+\begin{itemize}
+    \item \textbf{Leadership}: Managing global remote teams, fostering collaboration, and driving accountability.
+    \item \textbf{Operational Metrics}: Establishing KPIs to optimize engineering velocity and quality.
+    \item \textbf{System Architecture}: Designing low-latency, high-availability systems with global scalability.
+    \item \textbf{Performance Monitoring}: Skilled in tools like \textbf{Superset, Grafana}, \textbf{Datadog}, \textbf{Bugsnag}, and \textbf{Clickhouse}.
+    \item \textbf{Cloud Infrastructure}: Expertise in \textbf{AWS services} (EC2, ELB, RDS, S3, CloudFront) and modern DevOps practices at scale.
+    \item \textbf{Product Development}: Proficient in prioritization frameworks (\textbf{Jira Product Discovery, ICE}) and experimentation frameworks (\textbf{A/B testing}).
+    \item \textbf{M\&A Leadership}: Taking part in due diligence and ensuring seamless integration during acquisitions.
+\end{itemize}
+
+% Education
+\section*{Education}
+\textbf{Specialist degree in Applied Mathematics} \\
+Moscow Aviation Institute (National Research University) \hfill 2005--2010
+
+% Notable Achievements
+\section*{Notable Achievements}
+\begin{itemize}
+    \item Scaled 12Go to process \textbf{\$500K GMV daily}, achieving market leadership in APAC.
+    \item Launched a mobile app contributing \textbf{30\% of bookings} within its first year.
+    \item Successfully navigated the COVID-19 crisis, leading the business through an M\&A and ensuring operational continuity.
+    \item Co-founded a holiday rental platform that partnered with Airbnb, driving rapid growth in Southeast Asia.
+\end{itemize}
+
+% Additional Information
+\section*{Additional Information}
+\textbf{Languages:} Fluent in English and Russian (native), Thai (basic conversational) \\
+\textbf{Relocation:} Open to global opportunities
+
+\end{document}

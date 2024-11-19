@@ -9,26 +9,29 @@
 \usepackage{setspace}
 \usepackage[explicit]{titlesec}
 \usepackage{multicol}
+\usepackage{fontawesome5} % Use fontawesome5 instead
 
 % Modern font selection
 \setmainfont{Helvetica Neue}[
     UprightFont = *-Light,
     BoldFont = *-Bold,
 ]
+\setsansfont{Arial} % Different font for headings
 
 % Custom colors
 \definecolor{primarycolor}{RGB}{0, 79, 159}    % Professional blue
 \definecolor{secondarycolor}{RGB}{100, 100, 100} % Subtle gray
 \definecolor{linkcolor}{RGB}{0, 112, 201}      % Link blue
+\definecolor{headerbg}{RGB}{240, 240, 240}     % Light gray background
 
 % Custom section styling
 \titleformat{\section}
-    {\Large\bfseries\color{primarycolor}}
+    {\Large\bfseries\color{primarycolor}\sffamily}
     {}{0em}
     {#1\hrule height 0.5pt \vspace{-1em}}
 
 \titleformat{\subsection}
-    {\bfseries\color{secondarycolor}}
+    {\bfseries\color{secondarycolor}\sffamily}
     {}{0em}{#1\vspace{-0.5em}}
 
 % List styling
@@ -36,7 +39,8 @@
     leftmargin=*,
     topsep=0.2em,
     itemsep=0.2em,
-    parsep=0pt
+    parsep=0pt,
+    label=\textbullet
 }
 
 % Hyperlink setup
@@ -52,15 +56,19 @@
 
 % Header
 \begin{center}
-    {\Huge\textbf{Eugene Oleinik}} \\[0.3em]
-    {\Large\color{secondarycolor} Chief Technical Officer | Tech Growth Leader} \\[0.5em]
-    {\color{secondarycolor}
-    Bangkok, Thailand | Moscow, Russia (hometown) \\[0.2em]
-    \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | +66 80997 2366 \\[0.2em]
-    \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}}
+    \colorbox{headerbg}{\parbox{\textwidth}{
+        \vspace{0.5em}
+        {\Huge\textbf{Eugene Oleinik}} \\[0.3em]
+        {\Large\color{secondarycolor} Chief Technical Officer | Tech Growth Leader} \\[0.5em]
+        {\color{secondarycolor}
+        \faMapMarker \, Bangkok, Thailand | Moscow, Russia (hometown) \\[0.2em]
+        \faEnvelope \, \href{mailto:evoleinik@gmail.com}{evoleinik@gmail.com} | \faPhone \, +66 80997 2366 \\[0.2em]
+        \faLinkedin \, \href{http://linkedin.com/in/evoleinik}{linkedin.com/in/evoleinik}}
+        \vspace{0.5em}
+    }}
 \end{center}
 
-\vspace{1em}
+\vspace{0.5em}
 
 % Professional Summary
 \section*{Professional Summary}
@@ -111,7 +119,7 @@ Strategic and results-driven technology leader with a proven track record in lea
 
 % Skills
 \section*{Skills \& Expertise}
-\begin{multicols}{2}
+% \begin{multicols}{2}
 \begin{itemize}
     \item \textbf{Leadership}: Managing global remote teams, fostering collaboration, and driving accountability.
     \item \textbf{Operational Metrics}: Establishing KPIs to optimize engineering velocity and quality.
@@ -121,7 +129,7 @@ Strategic and results-driven technology leader with a proven track record in lea
     \item \textbf{Product Development}: Proficient in prioritization frameworks (\textbf{Jira Product Discovery, ICE}) and experimentation frameworks (\textbf{A/B testing}).
     \item \textbf{M\&A Leadership}: Taking part in due diligence and ensuring seamless integration during acquisitions.
 \end{itemize}
-\end{multicols}
+% \end{multicols}
 
 % Education
 \section*{Education}

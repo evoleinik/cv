@@ -1,10 +1,10 @@
 # Makefile for building the CV
 
 # Variables
-TEXFILE=cv-2024.tex
-PDFFILE=cv-2024.pdf
-PNGFILE1=cv-2024-1.png
-PNGFILE2=cv-2024-2.png
+TEXFILE=cv-2026.tex
+PDFFILE=cv-2026.pdf
+PNGFILE1=cv-2026-1.png
+PNGFILE2=cv-2026-2.png
 
 # Default target
 all: $(PDFFILE) $(PNGFILE1) $(PNGFILE2)
